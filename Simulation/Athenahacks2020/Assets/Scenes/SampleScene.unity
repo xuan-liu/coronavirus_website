@@ -307,12 +307,12 @@ PrefabInstance:
     - target: {fileID: 8121273524006591860, guid: 7783a4c1acc3a49e7874842e0fb0e823,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.3638356
+      value: 7.62
       objectReference: {fileID: 0}
     - target: {fileID: 8121273524006591860, guid: 7783a4c1acc3a49e7874842e0fb0e823,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.42389846
+      value: 4.52
       objectReference: {fileID: 0}
     - target: {fileID: 8121273524006591860, guid: 7783a4c1acc3a49e7874842e0fb0e823,
         type: 3}
@@ -361,6 +361,50 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7783a4c1acc3a49e7874842e0fb0e823, type: 3}
+--- !u!1 &880136266
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 880136268}
+  - component: {fileID: 880136267}
+  m_Layer: 0
+  m_Name: CrowdController
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &880136267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880136266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06f33fab72a19403da5862eef60e1182, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 6974975207262504747, guid: 7783a4c1acc3a49e7874842e0fb0e823, type: 3}
+--- !u!4 &880136268
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880136266}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.54, y: 2.66, z: -0.73505604}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1618377768
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,12 +486,12 @@ PrefabInstance:
     - target: {fileID: 8121273524006591860, guid: 7783a4c1acc3a49e7874842e0fb0e823,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.05
+      value: -7.61
       objectReference: {fileID: 0}
     - target: {fileID: 8121273524006591860, guid: 7783a4c1acc3a49e7874842e0fb0e823,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.41
+      value: 4.53
       objectReference: {fileID: 0}
     - target: {fileID: 8121273524006591860, guid: 7783a4c1acc3a49e7874842e0fb0e823,
         type: 3}

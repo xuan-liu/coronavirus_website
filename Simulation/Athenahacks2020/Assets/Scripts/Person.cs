@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Person : MonoBehaviour
+public class Person: MonoBehaviour
 {
 
     public bool hasVirus = false;
@@ -13,13 +13,15 @@ public class Person : MonoBehaviour
     public bool washesHands = false;
     public bool wearsMask = false;
 
-    public float amountInteraction = 0.5f;
+    
 
     public float chanceOfGoingToTest = 0;
 
-    private Animator animator;
+    public PersonComponent personComponent;
 
-    //0 = base
+
+    private Animator animator;
+        //0 = base
     //1 = sick
     //2 = Corona
     //3 = Dead
@@ -32,31 +34,15 @@ public class Person : MonoBehaviour
     //     DeadHuman
     // }
 
-
-    // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
-    //if (Input.GetKeyDown("f")){
-            //speed++;
-        //}
 
-        if (Input.GetKeyDown("f")){
-            healthState++;
-            if (healthState > 3){
-                healthState = 0;
-            }
-            updateSprite();
-        }
     }
-
-    
 
     void updateSprite(){
         if (healthState == 0){
@@ -72,4 +58,6 @@ public class Person : MonoBehaviour
             animator.SetInteger("SpriteState", 3);
         }
     }
+
+
 }
