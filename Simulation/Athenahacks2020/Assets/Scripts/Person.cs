@@ -25,7 +25,7 @@ public class Person: MonoBehaviour
     //1 = sick
     //2 = Corona
     //3 = Dead
-    public int healthState = 3;
+    public int healthState = 0;
     // public enum spriteState
     // {
     //     BaseHuman,
@@ -41,10 +41,10 @@ public class Person: MonoBehaviour
 
     void Update()
     {
-
+        updateSprite();
     }
 
-    void updateSprite(){
+    public void updateSprite(){
         if (healthState == 0){
             animator.SetInteger("SpriteState", 0);// SpriteState = 0;
         }

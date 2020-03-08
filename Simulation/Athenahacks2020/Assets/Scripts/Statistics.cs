@@ -14,6 +14,8 @@ public static class Statistics
 
     public static float fluRecoveryRate = .3f;
 
+    public static float chanceShowSymptoms = .2f;
+
     public static float globalChanceOfGoingToTest = .3f;
 
     //temporarily hard coding

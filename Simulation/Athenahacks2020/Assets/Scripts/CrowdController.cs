@@ -47,26 +47,54 @@ public class CrowdController : MonoBehaviour
                 if (curNumCoronaVirus < Statistics.numCoronaVirusPositive){
                     curNumCoronaVirus++;
                     newPerson.hasVirus = true;
+                    if (curNumCoronaVirus == 0){
+                        newPerson.visibleSymptoms = true;
+                        newPerson.healthState = 1;
+                    }
+                    Debug.Log("Added sick");
                 }
                 arr_people.Add(newPerson);
             }
         }
 
         int curNumWashHands = 0;
-        while (curNumWashHands < Statistics.numPeopleWashHands){
+        int numToGiveUp = 100;
+        while (numToGiveUp> 0 && curNumWashHands < Statistics.numPeopleWashHands){
             int handwasherIndex = Random.Range(0,100);
             if (!CrowdController.arr_people[handwasherIndex].washesHands){
                 CrowdController.arr_people[handwasherIndex].washesHands = true;
                 curNumWashHands++;
+                Debug.Log("Added hand washer");
+            }
+            else{
+                numToGiveUp--;
             }
         }
 
         int curNumWearMasks = 0;
-        while (curNumWearMasks < Statistics.numPeopleWashHands){
+        numToGiveUp = 100;
+        while (numToGiveUp> 0 && curNumWearMasks < Statistics.numPeopleWashHands){
             int handwasherIndex = Random.Range(0,100);
             if (!CrowdController.arr_people[handwasherIndex].wearsMask && !CrowdController.arr_people[handwasherIndex].washesHands){
                 CrowdController.arr_people[handwasherIndex].wearsMask = true;
                 curNumWearMasks++;
+            }
+            else{
+                numToGiveUp--;
+            }
+        }
+
+        int curNumBoth = 0;
+        numToGiveUp = 100;
+        while (numToGiveUp> 0 && curNumBoth < Statistics.numPeopleWashHandsAndWearMasks){
+            int handwasherIndex = Random.Range(0,100);
+            if (!CrowdController.arr_people[handwasherIndex].wearsMask && !CrowdController.arr_people[handwasherIndex].washesHands){
+                CrowdController.arr_people[handwasherIndex].washesHands = true;
+                CrowdController.arr_people[handwasherIndex].wearsMask = true;
+                curNumBoth++;
+            }
+            else{
+                numToGiveUp--;
             }
         }
 
