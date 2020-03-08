@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>Discrete Random Variables</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Dr. Dogucu" />
+    <meta name="date" content="2019-10-14" />
+    
+    <link rel="stylesheet" href="slide-styles.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Discrete Random Variables
+### Dr. Dogucu
+### 2019-10-14
+
+---
+
+
+layout: true
+  
+&lt;div class="my-header"&gt;&lt;/div&gt;
+
+&lt;div class="my-footer"&gt; 
+ Copyright &amp;copy; &lt;a href="https://mdogucu.ics.uci.edu"&gt;Dr. Mine Dogucu&lt;/a&gt;. All Rights Reserved.&lt;/div&gt; 
+
+---
+
+
+
+
+## Announcements
+
+- Reading questions have been graded
+---
+## Review
+
+Which of the following are mutually exclusive events. Select multiple
+
+a) A - There is rain &amp;  B - There is sunshine  
+b) A - Today is Sunday &amp; B - Today is Saturday  
+c) A - You pass your statistics class &amp; B - You fail your statistics class 
+d) A - A person's first name starts with the letter J - B A person's last name starts with the letter J  
+e) A - A person speak Spanish - B - A person speaks English  
+
+---
+## Review
+
+Which of the following are mutually exclusive events. Select multiple
+
+a) A - There is rain &amp;  B - There is sunshine  
+b) __A - Today is Sunday &amp; B - Today is Saturday__  
+c) __A - You pass your statistics class &amp; B - You fail your statistics class__   
+d) A - A person's first name starts with the letter J - B A person's last name starts with the letter J  
+e) A - A person speak Spanish - B - A person speaks English  
+
+---
+## Review
+
+&lt;img src="img/venn-shaded.png" height="200" style="display: block; margin: auto;" /&gt;
+
+Which of the following represents the shaded area in the Venn diagram?
+
+a) `\((A \cup B)^c\)`  
+b) `\((A \cap B)^c\)`  
+c) `\((A^c\cup B)^c\)`  
+d) `\((A^c \cap B) \cup (A \cap B^c)\)`
+
+
+---
+## Review
+
+&lt;img src="img/venn-shaded.png" height="200" style="display: block; margin: auto;" /&gt;
+
+Which of the following represents the shaded area in the Venn diagram?
+
+a) `\((A \cup B)^c\)`  
+b) `\((A \cap B)^c\)`  
+c) `\((A^c\cup B)^c\)`  
+__d)__ `\((A^c \cap B) \cup (A \cap B^c)\)`
+---
+
+## Review
+.pull-left[
+&lt;img src="slide-3a-discrete_files/figure-html/unnamed-chunk-4-1.png" height="250" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[Which of the following statements is __false__?  ]
+
+a. Fares of Queenstown passengers had the lowest median.
+
+b. Southampton passengers had the highest number of outliers in Fares when passengers are compared to other passengers from their embarkation point
+
+c. The third quartile of Fares of Cherbourg passengers is higher than the maximum Fare of Southampton passengers. 
+
+
+---
+
+## Review
+.pull-left[
+&lt;img src="slide-3a-discrete_files/figure-html/unnamed-chunk-5-1.png" height="250" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[Which of the following statements is __false__?  ]
+
+a. Fares of Queenstown passengers had the lowest median.
+
+b. Southampton passengers had the highest number of outliers in Fares when passengers are compared to other passengers from their embarkation point
+
+c. __The third quartile of Fares of Cherbourg passengers is higher than the maximum Fare of Southampton passengers.__ 
+---
+
+## Random Variable
+Random variables are numeric values that are possible numeric outcomes of a random process. Capital letters `\(X, Y, Z\)` are usually used to indicate random variables. 
+
+Lower case letters `\(x, y, z\)` are reserved to indicate __observed outcome__ of the random variables. 
+
+e.g. `\(X\)` is the number on a die after a roll.   
+The possible outcomes of `\(X\)` are `\(x \in \{1,2,3,4,5,6\}\)`  
+To indicate a specific outcome we use subscript such as `\(x_1\)`, `\(x_2\)`... or we 
+use `\(x_i\)` to refer to any outcome.  
+`\(P(X = 1) = \frac{1}{6}\)`
+
+---
+## Discrete Random Variables
+
+A discrete random variable has a sample space that is finite or countably infinite. 
+
+e.g. Let X be the random variable that represents the number of heads in a single coin flip.
+
+`\(x \in \{0, 1\}\)` where 0 indicates the outcome was tails and 1 indicates heads. Since the sample space is finite, X is a discrete random variable. 
+
+---
+## Discrete Random Variables
+
+More examples
+
+Let `\(X\)` be the number of heads in 5 coin flips. `\(\Omega_x = \{0,1,2,3,4,5\}\)`. The sample space is finite.
+
+Let `\(X\)` be the proportion of correct responses on a test with 100 questions. `\(\Omega_x = \{0.00,0.01,0.02,...,0.98, 0.99, 1.00\}\)`. The sample space is finite. Note that the elements of the sample space is not integers.
+
+Let `\(X\)` be the number of times you roll a die until you get a 6. `\(\Omega_x = \{1,2,3,4,5,6,7,8,...\}\)` The sample space is countably infinite.
+
+---
+
+## Probability mass function (pmf)
+X is the number on a die after a roll
+&lt;img src="slide-3a-discrete_files/figure-html/unnamed-chunk-6-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Cumulative distribution function (cdf)
+
+![](slide-3a-discrete_files/figure-html/unnamed-chunk-7-1.png)&lt;!-- --&gt;
+---
+## Cumulative distribution function
+
+Using the cdf calculate these:
+
+`\(P(X&lt;2) =\)`   
+`\(P(X\leq2) =\)`   
+`\(P(X\leq6) =\)`   
+`\(P(X&gt;2) =\)`   
+---
+
+## Cumulative distribution function
+
+Using the cdf calculate these:
+
+`\(P(X&lt;2) = \frac{1}{6}\)`   
+`\(P(X\leq2) = \frac{2}{6}\)`   
+`\(P(X\leq6) = 1\)`   
+`\(P(X&gt;2) = 1 - \frac{2}{6} = \frac{4}{6}\)`   
+---
+## Expected Value
+
+You are playing an amazing game where you always win. Host of the game makes you draw a banknote from a bag that has exactly four banknotes, `$1`, `$5`, `$10`, and `$50`. What is the expected value of earning in this game? 
+
+---
+## Expected Value
+
+You are playing an amazing game where you always win. Host of the game makes you draw a banknote from a bag that has exactly four banknotes, `$1`, `$5`, `$10`, and `$50`. What is the expected value of earning in this game?
+
+Before learning probability: 
+
+`\(\frac{1+5+10+50}{4} = 16.5\)`
+
+After learning probability: 
+`\(1\cdot \frac{1}{4}+ 5\cdot \frac{1}{4} +10\cdot \frac{1}{4} + 50\cdot \frac{1}{4} = 16.5\)`
+---
+## Expected Value
+
+You are playing an amazing game where you always win. Host of the game makes you draw a banknote from a bag that has exactly five, `$1`, `$5`, `$10`, and 2 of `$50`. What is the expected value of earning in this game? 
+---
+## Expected Value
+
+You are playing an amazing game where you always win. Host of the game makes you draw a banknote from a bag that has exactly five, `$1`, `$5`, `$10`, and 2 of `$50`. What is the expected value of earning in this game?
+
+Before learning probability: 
+
+`\(\frac{1+5+10+50+50}{5} = 23.2\)`
+
+After learning probability: 
+`\(1\cdot \frac{1}{5}+ 5\cdot \frac{1}{5} +10\cdot \frac{1}{5} + 50\cdot \frac{2}{5} = 23.2\)`
+
+---
+
+## Expected Value
+
+You are playing an amazing game where you always win. Host of the game makes you draw a banknote from a bag that has exactly four banknotes, `$2`, `$10`, `$20`, and `$100`. The amounts on the banknotes are exactly the double of what we have seen in the first scenario. What is the expected value of earning in this game?
+
+After learning probability: 
+`\(2\cdot \frac{1}{4}+ 10\cdot \frac{1}{4} +20\cdot \frac{1}{4} + 100\cdot \frac{1}{4}\)` or even better
+`\(2\times[1\cdot \frac{1}{4}+ 5\cdot \frac{1}{4} +10\cdot \frac{1}{4} + 50\cdot \frac{1}{4}] = 2\times[16.5]\)`
+
+---
+## Expected Value of Discrete Random Variables
+Expectation of random variable `\(X\)` with a pmf of `\(p(x)\)` is  
+`\(E[X] = \displaystyle \sum_{x} x p(x) = \mu\)`
+
+The expect value of linear combination of random variables `\(X\)` and `\(Y\)` and fixed numbers `\(a\)` and `\(b\)` is 
+
+`\(E[aX+bY] = aE[X] + bE[Y]\)`
+
+---
+## Variance of Discrete Random Variables
+
+`\(Var(X) = E[(X-\mu)^2] = E[X^2] - E[X]^2\)`
+
+Can you explain variance in words?
+
+`\(Var(aX+bY) = a^2Var(x)+b^2Var(Y)\)`
+---
+## Mean (1 or 3) and Std Dev (1 or 3)
+
+&lt;img src="slide-3a-discrete_files/figure-html/unnamed-chunk-8-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Descriptives Notation
+
+| Description        	| Population Parameter 	| Sample Statistic 	|
+|--------------------	|----------------------	|------------------	|
+| Mean               	|         `\(\mu\)`       	|     `\(\bar{x}\)`    	|
+| Variance           	|      `\(\sigma^2\)`      	|       `\(s^2\)`      	|
+| Standard Deviation 	|       `\(\sigma\)`       	|        `\(s\)`       	|
+
+
+---
+
+## Mean and Variance with  R
+
+For observed data we have already seen the summarize function which can be used to calculate mean, variance, and standard deviation.
+
+
+```r
+titanic_train %&gt;% 
+  summarize(mean(Fare), sd(Fare), 
+            var(Fare))
+```
+
+```
+##   mean(Fare) sd(Fare) var(Fare)
+## 1   32.20421 49.69343  2469.437
+```
+
+We will learn about how we can calculate `\(\mu\)` and `\(\sigma^2\)` for a given probability function.
+
+---
+## R as a calculator
+
+
+```r
+3 + 5
+```
+
+```
+## [1] 8
+```
+
+Note that output is a vector with a length of 1. R is one indexed. 
+---
+
+## Object Assignment in R
+
+
+```r
+x &lt;- 13
+x
+```
+
+```
+## [1] 13
+```
+---
+
+## Object Assignment in R
+
+
+```r
+y &lt;- c(21, 8)
+y
+```
+
+```
+## [1] 21  8
+```
+
+Note the [1] in the output the index number for 21
+---
+
+## Object Assignment in R
+
+
+```r
+test &lt;- c("yes", "no", "no", "no")
+test
+```
+
+```
+## [1] "yes" "no"  "no"  "no"
+```
+
+---
+
+## Object Assignment in R
+
+Why is it the `&lt;-` operator and not `=`?
+
+Read more about it [here](https://stackoverflow.com/questions/1741820/what-are-the-differences-between-and-assignment-operators-in-r) after class.
+
+---
+
+
+
+## Unfair Die
+
+An unfair die has been created with the following properties:
+
+
+```r
+x &lt;- c(1, 2, 3, 4, 5, 6)
+f_x &lt;- c(1/10, 1/10, 1/10, 2/10, 
+         2/10, 3/10)
+```
+
+Is `f_x` a probability distribution? How do you know?
+
+---
+## Expected Value by hand
+
+How would you calculate `\(E(X)\)` if you were calculating by hand? You do not need to calculate it but think about the process.
+---
+## Expected Value in R
+
+
+```r
+mu &lt;- sum(x*f_x)
+mu
+```
+
+```
+## [1] 4.2
+```
+---
+
+## Variance by hand
+
+How would you calculate `\(Var(X)\)` if you were calculating by hand? You do not need to calculate it but think about the process.
+---
+## Variance in R
+
+
+```r
+sigma2 &lt;- sum((x-mu)^2*f_x)
+sigma2 
+```
+
+```
+## [1] 2.76
+```
+---
+
+## Standard Deviation in R
+
+
+```r
+sigma &lt;- sqrt(sigma2)
+sigma
+```
+
+```
+## [1] 1.661325
+```
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create();
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

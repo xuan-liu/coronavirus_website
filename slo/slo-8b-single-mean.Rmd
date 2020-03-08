@@ -1,0 +1,22 @@
+---
+title: "Inference for a Single Mean"
+date: "2019-11-20"
+output: 
+  html_document:
+    css: slo-styles.css 
+    includes:
+      after_body: footer.html
+---
+
+## Learning Objectives
+
+By the end of this lecture, you will be able to:
+
+- calculate confidence interval for a single mean.
+- set and test hypotheses for a single mean.
+
+
+<br>
+<br>
+<br>
+

@@ -1,0 +1,27 @@
+---
+title: "Final Exam"
+output: 
+  html_document:
+    css: final-styles.css 
+    includes:
+      after_body: footer.html
+---
+
+This is the [cheat sheet](cheatsheet.pdf) for the final exam.
+
+Here are the [policies](policies.pdf). Read them carefully before coming to the in class final.
+
+We have list of [R functions](https://docs.google.com/document/d/1fz1kIeCgRTXfJWT68u9RgX8-fSyC12mGx8OEcNitNm8/edit?usp=sharing) that we have learned.
+
+We have a list of [topics](https://docs.google.com/spreadsheets/d/11iE0fJAD_nG5_sa04kcpMZSZvUkKhvemgGvD_-q0w_s/edit?usp=sharing) along with readings. 
+
+The final review exam is [here](final-review.pdf)
+Answer key for the final review exam is [here](final-review-key.pdf)
+
+
+The take-home portion of the final is available [here](take-home.html)
+
+
+<br>
+<br>
+<br>

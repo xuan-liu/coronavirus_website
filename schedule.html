@@ -1,0 +1,741 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Stats 67</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+    <!-- add after bootstrap.min.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css"
+    />
+    <!-- add after bootstrap.min.js -->
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
+
+    <link rel="stylesheet" href="course-styles.css">
+
+    <script src="https://kit.fontawesome.com/4145f6a1ca.js"></script>
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148347432-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-148347432-1');
+    </script>
+
+  </head>
+  <body data-spy="scroll" data-target="#toc">
+
+
+    <nav class="navbar navbar-expand-lg ">
+      <a class="navbar-brand navbar-text" href="#">Stats 67 - UC Irvine - Fall 2019</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" >    <i class="fas fa-bars" style="color:##000000; font-size:28px;"></i>
+</span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"> <a class ="nav-link" href="main.html">Home</a></li>
+        <li class="nav-item"> <a class ="nav-link" href="office.html">Office Hours</a></li>
+        <li class="nav-item"> <a class ="nav-link" href="policies.html">Policies</a></li>
+        <li class="nav-item"> <a class ="nav-link" href="tools.html">Tools</a></li>
+        <li class="nav-item"> <a class ="nav-link" href="schedule.html">Schedule</a></li>
+        <li class="nav-item"> <a class ="nav-link" href="opp.html">Opportunities</a></li>
+      </ul>
+
+    </div>
+  </nav>
+
+
+
+    <div class = "main-text">
+      <b>Note:</b> This is a tentative schedule. The exam dates are set but
+      the rest (slides, homework assignments etc. ) will be posted as we go along. You
+      should expect to see assignments one week before its due date. We will spend 1.5 weeks on summarizing
+      data, 3 weeks on probability, 3 weeks on inference, and 1 week on maximum likelihood estimation.
+      </thead>
+      <br>
+      <br>
+      <table class="table table-condensed table-striped">
+        <thead>
+
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Before Class</td>
+            <td align = "center" colspan="3">In Class</td>
+            <td>After Class</td>
+            <td></td>
+
+
+          </tr>
+          <tr>
+
+          <td> Week</td>
+          <td> Date</td>
+          <td> Lesson</td>
+          <td> Objectives</td>
+          <td> Reading</td>
+          <td> Slides</td>
+          <td> Handouts</td>
+          <td> Code</td>
+          <td> Homework</td>
+          <td> Exams</td>
+        </tr>
+        </thead>
+
+      <tbody>
+        <tr>
+          <td align="left">1</td>
+          <td align="left">Mon, Sep 30</td>
+          <td align="left">Introduction to Stats 67</td>
+          <td align="center"> <a href="slo/slo-1a-welcome.html">
+            <i class="fas fa-bullseye fa-lg"></i></a></td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-book-open fa-lg"></i></font> </td>
+          <td align="center"> <a href="slide/slide-1a-welcome.html">
+            <i class="fas fa-chalkboard-teacher fa-lg"></i></a> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-sticky-note fa-lg"></i></font> </td>
+            <td align="center"> <font color = "#cbcbcb">
+              <i class="fab fa-r-project fa-lg"></i></font> </td>
+          <td align="center"> <a href="hw/hw-1a-you.html">
+            <i class="fas fa-laptop fa-lg"></i> </td>
+            <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-edit fa-lg"></i></font> </td>
+        </tr>
+
+        <tr>
+          <td align="left"></td>
+          <td align="left">Wed, Oct 2</td>
+          <td align="left">Introduction to Data</td>
+          <td align="center"> <a href="slo/slo-1b-intro-data.html">
+            <i class="fas fa-bullseye fa-lg"></i></a></td>
+          <td align="center"> <a href="reading/reading-1b-intro-data.html">
+            <i class="fas fa-book-open fa-lg"></i></a> </td>
+          <td align="center"> <a href="slide/slide-1b-intro-data.html">
+            <i class="fas fa-chalkboard-teacher fa-lg"></i></a> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-sticky-note fa-lg"></i></font> </td>
+            <td align="center"> <font color = "#cbcbcb">
+              <i class="fab fa-r-project fa-lg"></i></font> </td>
+          <td align="center"> <a href="hw/hw-2-intro-data.html">
+            <i class="fas fa-laptop fa-lg"></i></a> </td>
+            <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-edit fa-lg"></i></font> </td>
+        </tr>
+
+        <tr>
+          <td align="left"></td>
+          <td align="left">Wed, Oct 2</td>
+          <td align="left"> Opening the Tool Box</td>
+          <td align="center"> <a href="slo/slo-1l-toolbox.html">
+            <i class="fas fa-bullseye fa-lg"></i></a></td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-book-open fa-lg"></i></font> </td>
+          <td align="center"> <a href="slide/slide-1l-intro-toolbox.html">
+            <i class="fas fa-chalkboard-teacher fa-lg"></i> </a> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-sticky-note fa-lg"></i></font> </td>
+            <td align="center"> <a href="https://rstudio.cloud/spaces/29360/project/549919">
+              <i class="fab fa-r-project fa-lg"></i></font> </a> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-laptop fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-edit fa-lg"></i></font> </td>
+        </tr>
+
+        <tr>
+          <td align="left">2</td>
+          <td align="left">Mon, Oct 7</td>
+          <td align="left">Summarizing Data</td>
+          <td align="center"><a href="slo/slo-2a-summarize.html">
+            <i class="fas fa-bullseye fa-lg"></i></a></td>
+          <td align="center"> <a href="reading/reading-2a-summarize.html">
+            <i class="fas fa-book-open fa-lg"></i> </a> </td>
+          <td align="center"> <a href="slide/slide-2a-summarize-data.html">
+            <i class="fas fa-chalkboard-teacher fa-lg"></i></a> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-sticky-note fa-lg"></i></font> </td>
+            <td align="center"> <font color = "#cbcbcb">
+              <i class="fab fa-r-project fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-laptop fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-edit fa-lg"></i></font> </td>
+        </tr>
+
+        <tr>
+          <td align="left"></td>
+          <td align="left">Wed, Oct 9</td>
+          <td align="left">Introduction to Probability</td>
+          <td align="center"><a href="slo/slo-2b-intro-prob.html">
+            <i class="fas fa-bullseye fa-lg"></i></a></td>
+          <td align="center"> <a href="reading/reading-2b-intro-prob.html">
+            <i class="fas fa-book-open fa-lg"></i></a></td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-chalkboard-teacher fa-lg"></i></font> </td>
+          <td align="center"> <a href="handout/lec2b-intro-prob.pdf">
+            <i class="fas fa-sticky-note fa-lg"></i></a> </td>
+            <td align="center"> <font color = "#cbcbcb">
+              <i class="fab fa-r-project fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-laptop fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-edit fa-lg"></i></font> </td>
+        </tr>
+
+        <tr>
+          <td align="left"></td>
+          <td align="left">Wed, Oct 9</td>
+          <td align="left">Visualizing Data</td>
+          <td align="center"><a href="slo/slo-2l-intro-viz.html">
+            <i class="fas fa-bullseye fa-lg"></i></a></td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-book-open fa-lg"></i></font> </td>
+          <td align="center"> <a href="slide/slide-2l-intro-viz.html">
+            <i class="fas fa-chalkboard-teacher fa-lg"></i></a> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-sticky-note fa-lg"></i></font> </td>
+            <td align="center"> <a href="https://rstudio.cloud/spaces/29360/project/556679">
+              <i class="fab fa-r-project fa-lg"></i></a> </td>
+          <td align="center"> <a href="hw/hw-3-prob-viz.html">
+            <i class="fas fa-laptop fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-edit fa-lg"></i></font> </td>
+        </tr>
+
+        <tr>
+          <td align="left">3</td>
+          <td align="left">Mon, Oct 14</td>
+          <td align="left">Discrete Random Variables and Distributions</td>
+          <td align="center"><a href="slo/slo-3a-random-var.html">
+            <i class="fas fa-bullseye fa-lg"></i></a></td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-book-open fa-lg"></i></font> </td>
+          <td align="center"> <a href="slide/slide-3a-discrete.html">
+            <i class="fas fa-chalkboard-teacher fa-lg"></i></font> </td>
+          <td align="center"> <a href="handout/lec3a-random.pdf">
+            <i class="fas fa-sticky-note fa-lg"></i></a> </td>
+            <td align="center"> <font color = "#cbcbcb">
+              <i class="fab fa-r-project fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-laptop fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-edit fa-lg"></i></font> </td>
+        </tr>
+
+        <tr>
+          <td align="left"></td>
+          <td align="left">Wed, Oct 16</td>
+          <td align="left">Bernoulli, Binomial, and Geometric Distributions</td>
+          <td align="center"><a href="slo/slo-3b-discrete.html">
+            <i class="fas fa-bullseye fa-lg"></i></a></td>
+          <td align="center"> <a href="reading/reading-3b-discrete.html">
+            <i class="fas fa-book-open fa-lg"></i></a> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-chalkboard-teacher fa-lg"></i></font> </td>
+          <td align="center"> <a href="handout/lec3b-binom-geom.pdf">
+            <i class="fas fa-sticky-note fa-lg"></i></font> </td>
+            <td align="center"> <font color = "#cbcbcb">
+              <i class="fab fa-r-project fa-lg"></i></font> </td>
+          <td align="center"> <a href="hw/hw-4-discrete.html">
+            <i class="fas fa-laptop fa-lg"></i></a> </td>
+            <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-edit fa-lg"></i></font> </td>
+        </tr>
+
+        <tr>
+          <td align="left"></td>
+          <td align="left">Wed, Oct 16</td>
+          <td align="left"> discRete Random vaRiables </td>
+          <td align="center"><a href="slo/slo-3l-discrete-r.html">
+            <i class="fas fa-bullseye fa-lg"></i></a></td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-book-open fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-chalkboard-teacher fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-sticky-note fa-lg"></i></font> </td>
+            <td align="center"> <a href="https://rstudio.cloud/spaces/29360/project/596875">
+              <i class="fab fa-r-project fa-lg"></i></a> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-laptop fa-lg"></i></font> </td>
+            <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-edit fa-lg"></i></font> </td>
+        </tr>
+
+
+        <tr>
+          <td align="left">4</td>
+          <td align="left">Mon, Oct 21</td>
+          <td align="left">Poisson and Discrete Uniform Distributions</td>
+          <td align="center"><a href="slo/slo-4a-pois-uni.html">
+            <i class="fas fa-bullseye fa-lg"></i></a></td>
+          <td align="center"> <a href="reading/reading-4a-pois.html">
+            <i class="fas fa-book-open fa-lg"></i></a> </td>
+          <td align="center"> <a href="slide/slide-4a-pois-uni.html">
+            <i class="fas fa-chalkboard-teacher fa-lg"></i></a> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-sticky-note fa-lg"></i></font> </td>
+            <td align="center"> <font color = "#cbcbcb">
+              <i class="fab fa-r-project fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-laptop fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-edit fa-lg"></i></font> </td>
+        </tr>
+
+        <tr>
+          <td align="left"></td>
+          <td align="left">Wed, Oct 23</td>
+          <td align="left">Continuous Random Variables and Distributions</td>
+          <td align="center"><a href="slo/slo-4b-cont.html">
+            <i class="fas fa-bullseye fa-lg"></i></a></td>
+          <td align="center"> <a href="reading/reading-4b-cont.html">
+            <i class="fas fa-book-open fa-lg"></i></a> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-chalkboard-teacher fa-lg"></i></font> </td>
+          <td align="center"> <a href="handout/lec4b-cont.pdf">
+            <i class="fas fa-sticky-note fa-lg"></i></a> </td>
+            <td align="center"> <font color = "#cbcbcb">
+              <i class="fab fa-r-project fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-laptop fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-edit fa-lg"></i></font> </td>
+        </tr>
+
+        <tr>
+          <td align="left"></td>
+          <td align="left">Wed, Oct 30</td>
+          <td align="left">discRete Random vaRiables II</td>
+          <td align="center"><a href="slo/slo-4l-pois-uni-r.html">
+            <i class="fas fa-bullseye fa-lg"></i></a></td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-book-open fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-chalkboard-teacher fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-sticky-note fa-lg"></i></font> </td>
+            <td align="center"> <font color = "#cbcbcb">
+              <i class="fab fa-r-project fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-laptop fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-edit fa-lg"></i></font> </td>
+        </tr>
+
+        <tr>
+          <td align="left">5</td>
+          <td align="left">Mon, Oct 28</td>
+          <td align="left">Continuous Uniform and Exponential Distributions</td>
+          <td align="center"><a href="slo/slo-5a-uni-exp.html">
+            <i class="fas fa-bullseye fa-lg"></i></a></td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-book-open fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-chalkboard-teacher fa-lg"></i></font> </td>
+          <td align="center"> <a href="handout/lec5a-uni-exp.pdf">
+            <i class="fas fa-sticky-note fa-lg"></i></a> </td>
+            <td align="center"> <a href="demo/demo-5a-exp.html">
+              <i class="fab fa-r-project fa-lg"></i></a> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-laptop fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-edit fa-lg"></i></font> </td>
+        </tr>
+
+        <tr>
+          <td align="left"></td>
+          <td align="left">Wed, Oct 30</td>
+          <td align="left">Normal Distribution</td>
+          <td align="center"><a href="slo/slo-5b-norm.html">
+            <i class="fas fa-bullseye fa-lg"></i></a></td>
+          <td align="center"> <a href="reading/reading-5b-norm.html">
+            <i class="fas fa-book-open fa-lg"></i></a> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-chalkboard-teacher fa-lg"></i></font> </td>
+          <td align="center"> <a href="handout/lec5b-normal.pdf">
+            <i class="fas fa-sticky-note fa-lg"></i></a> </td>
+          <td align="center"> <font color = "#cbcbcb">
+              <i class="fab fa-r-project fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-laptop fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-edit fa-lg"></i></font> </td>
+        </tr>
+
+        <tr>
+          <td align="left"></td>
+          <td align="left">Wed, Oct 30</td>
+          <td align="left">Midterm Review</td>
+          <td align="center"><font color = "#cbcbcb">
+            <i class="fas fa-bullseye fa-lg"></i></font></td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-book-open fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-chalkboard-teacher fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-sticky-note fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+              <i class="fab fa-r-project fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-laptop fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-edit fa-lg"></i></font> </td>
+        </tr>
+
+        <tr>
+          <td align="left">6</td>
+          <td align="left">Mon, Nov 4</td>
+          <td align="left"> Midterm </td>
+          <td align="center"><font color = "#cbcbcb">
+            <i class="fas fa-bullseye fa-lg"></i></font></td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-book-open fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-chalkboard-teacher fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-sticky-note fa-lg"></i></font> </td>
+            <td align="center"> <font color = "#cbcbcb">
+              <i class="fab fa-r-project fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-laptop fa-lg"></i></font> </td>
+          <td align="center"> <a href="midterm/midterm.html">
+            <i class="fas fa-edit fa-lg"></i> </a> </td>
+        </tr>
+        <tr>
+          <td align="left"></td>
+          <td align="left">Wed, Nov 6</td>
+          <td align="left">Introduction to Inference</td>
+          <td align="center"><a href="slo/slo-6b-infer.html">
+            <i class="fas fa-bullseye fa-lg"></i></a></td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-book-open fa-lg"></i></font> </td>
+          <td align="center"> <a href="slide/slide-6b-infer.html">
+            <i class="fas fa-chalkboard-teacher fa-lg"></i></a> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-sticky-note fa-lg"></i></font> </td>
+            <td align="center"> <a href="https://rstudio.cloud/spaces/29360/project/684982">
+              <i class="fab fa-r-project fa-lg"></i></a> </td>
+          <td align="center"> <a href="hw/hw-5-cont.html">
+            <i class="fas fa-laptop fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-edit fa-lg"></i></font> </td>
+        </tr>
+
+        <tr>
+          <td align="left"></td>
+          <td align="left">Wed, Nov 6</td>
+          <td align="left">Continuous Distributions in R</td>
+          <td align="center"><a href="slo/slo-6l-norm.html">
+            <i class="fas fa-bullseye fa-lg"></i></a></td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-book-open fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-chalkboard-teacher fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-sticky-note fa-lg"></i></font> </td>
+            <td align="center"> <font color = "#cbcbcb">
+              <i class="fab fa-r-project fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-laptop fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-edit fa-lg"></i></font> </td>
+        </tr>
+
+        <tr>
+          <td align="left">7</td>
+          <td align="left">Mon, Nov 11</td>
+          <td align="center" colspan="8">No Class -  Veteran's Day</td>
+        </tr>
+
+        <tr>
+          <td align="left"></td>
+          <td align="left">Wed, Nov 13</td>
+          <td align="left">Inference for Single Proportion</td>
+          <td align="center"><a href="slo/slo-7b-cat.html">
+            <i class="fas fa-bullseye fa-lg"></i></font></td>
+          <td align="center"> <a href="reading/reading-7b-cat.html">
+            <i class="fas fa-book-open fa-lg"></i></a> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-chalkboard-teacher fa-lg"></i></font> </td>
+          <td align="center"> <a href="handout/lec7b-cat.pdf">
+            <i class="fas fa-sticky-note fa-lg"></i></a> </td>
+            <td align="center"> <font color = "#cbcbcb">
+              <i class="fab fa-r-project fa-lg"></i></font> </td>
+          <td align="center"> <a href="hw/hw-6-prop-inference.html">
+            <i class="fas fa-laptop fa-lg"></i></a> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-edit fa-lg"></i></font> </td>
+        </tr>
+
+        <tr>
+          <td align="left"></td>
+          <td align="left">Wed, Nov 13</td>
+          <td align="left">Inference for Single Proportion Exercises</td>
+          <td align="center"><a href="slo/slo-7l-cat.html">
+            <i class="fas fa-bullseye fa-lg"></i></a></td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-book-open fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-chalkboard-teacher fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-sticky-note fa-lg"></i></font> </td>
+            <td align="center"> <a href="https://rstudio.cloud/spaces/29360/project/707440">
+              <i class="fab fa-r-project fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-laptop fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-edit fa-lg"></i></font> </td>
+        </tr>
+
+        <tr>
+          <td align="left">8</td>
+          <td align="left">Mon, Nov 18</td>
+          <td align="left">Inference for Difference of Two Proportions</td>
+          <td align="center"><a href="slo/slo-8a-cat2.html">
+            <i class="fas fa-bullseye fa-lg"></i></a></td>
+          <td align="center"> <a href="reading/reading-8a-cat2.html">
+            <i class="fas fa-book-open fa-lg"></i></a> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-chalkboard-teacher fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-sticky-note fa-lg"></i></font> </td>
+            <td align="center"> <font color = "#cbcbcb">
+              <i class="fab fa-r-project fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-laptop fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-edit fa-lg"></i></font> </td>
+        </tr>
+
+
+        <tr>
+          <td align="left"></td>
+          <td align="left">Wed, Nov 20</td>
+          <td align="left">Inference for Single Mean</td>
+          <td align="center"><a href="slo/slo-8b-single-mean.html">
+            <i class="fas fa-bullseye fa-lg"></i></a></td>
+          <td align="center"> <a href="reading/reading-8b-single-mean.html">
+            <i class="fas fa-book-open fa-lg"></i></a> </td>
+          <td align="center"> <a href="slide/slide-8b-single-mean.html">
+            <i class="fas fa-chalkboard-teacher fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-sticky-note fa-lg"></i></font> </td>
+            <td align="center"> <font color = "#cbcbcb">
+              <i class="fab fa-r-project fa-lg"></i></font> </td>
+              <td align="center"> <a href="hw/hw-7-inference.html">
+                <i class="fas fa-laptop fa-lg"></i></a> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-edit fa-lg"></i></font> </td>
+        </tr>
+
+        <tr>
+          <td align="left"></td>
+          <td align="left">Wed, Nov 20</td>
+          <td align="left">Inference for Single Mean Using R</td>
+          <td align="center"><a href="slo/slo-8l-single-mean.html">
+            <i class="fas fa-bullseye fa-lg"></i></a></td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-book-open fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-chalkboard-teacher fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-sticky-note fa-lg"></i></font> </td>
+            <td align="center"> <a href="https://rstudio.cloud/spaces/29360/project/732020">
+              <i class="fab fa-r-project fa-lg"></i></a> </td>
+              <td align="center"> <font color = "#cbcbcb">
+                <i class="fas fa-laptop fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-edit fa-lg"></i></font> </td>
+        </tr>
+
+        <tr>
+          <td align="left">9</td>
+          <td align="left">Mon, Nov 25</td>
+          <td align="left">Inference for Difference of Two Means</td>
+          <td align="center"><a href="slo/slo-9a-two-means.html">
+            <i class="fas fa-bullseye fa-lg"></i></a></td>
+          <td align="center"> <a href="reading/reading-9a-two-means.html">
+            <i class="fas fa-book-open fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-chalkboard-teacher fa-lg"></i></font> </td>
+          <td align="center"> <a href="handout/lec9a-two-means.pdf">
+            <i class="fas fa-sticky-note fa-lg"></i></font> </td>
+            <td align="center"> <a href="https://rstudio.cloud/spaces/29360/project/747180">
+              <i class="fab fa-r-project fa-lg"></i></a> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-laptop fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-edit fa-lg"></i></font> </td>
+        </tr>
+
+        <tr>
+          <td align="left"></td>
+          <td align="left">Wed, Nov 27</td>
+          <td align="left">Linear Regression</td>
+          <td align="center"><a href="slo/slo-9b-regression.html">
+            <i class="fas fa-bullseye fa-lg"></i></a></td>
+          <td align="center"> <a href="reading/reading-9b-regression.html">
+            <i class="fas fa-book-open fa-lg"></i></a> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-chalkboard-teacher fa-lg"></i></font> </td>
+          <td align="center"> <a href="handout/lec9b-regression.pdf">
+            <i class="fas fa-sticky-note fa-lg"></i></a> </td>
+            <td align="center"> <font color = "#cbcbcb">
+              <i class="fab fa-r-project fa-lg"></i></font> </td>
+          <td align="center"> <a href="hw/hw-8-regression.html">
+            <i class="fas fa-laptop fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-edit fa-lg"></i></font> </td>
+        </tr>
+
+        <tr>
+          <td align="left"></td>
+          <td align="left">Wed, Nov 27</td>
+          <td align="left">Linear Regression Using R</td>
+          <td align="center"><a href="slo/slo-9l-regression.html">
+            <i class="fas fa-bullseye fa-lg"></i></a></td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-book-open fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-chalkboard-teacher fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-sticky-note fa-lg"></i></font> </td>
+            <td align="center"> <a href="https://rstudio.cloud/spaces/29360/project/747999">
+              <i class="fab fa-r-project fa-lg"></i></a> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-laptop fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-edit fa-lg"></i></font> </td>
+        </tr>
+
+
+        <tr>
+          <td align="left">10</td>
+          <td align="left">Mon, Dec 2</td>
+          <td align="left">Maximum Likelihood Estimation</td>
+          <td align="center"><a href="slo/slo-10a-mle.html">
+            <i class="fas fa-bullseye fa-lg"></i></a></td>
+          <td align="center"> <a href="reading/reading-10a-mle.html">
+            <i class="fas fa-book-open fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-chalkboard-teacher fa-lg"></i></font> </td>
+          <td align="center"> <a href="handout/lec10a-mle.pdf">
+            <i class="fas fa-sticky-note fa-lg"></i></font> </td>
+            <td align="center"> <font color = "#cbcbcb">
+              <i class="fab fa-r-project fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-laptop fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-edit fa-lg"></i></font> </td>
+        </tr>
+
+        <tr>
+          <td align="left"></td>
+          <td align="left">Wed, Dec 4</td>
+          <td align="left">Review</td>
+          <td align="center"><font color = "#cbcbcb">
+            <i class="fas fa-bullseye fa-lg"></i></font></td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-book-open fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-chalkboard-teacher fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-sticky-note fa-lg"></i></font> </td>
+            <td align="center"> <font color = "#cbcbcb">
+              <i class="fab fa-r-project fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-laptop fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-edit fa-lg"></i></font> </td>
+        </tr>
+
+        <tr>
+          <td align="left"></td>
+          <td align="left">Wed, Dec 4</td>
+          <td align="left">Review</td>
+          <td align="center"><font color = "#cbcbcb">
+            <i class="fas fa-bullseye fa-lg"></i></font></td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-book-open fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-chalkboard-teacher fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-sticky-note fa-lg"></i></font> </td>
+            <td align="center"> <font color = "#cbcbcb">
+              <i class="fab fa-r-project fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-laptop fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-edit fa-lg"></i></font> </td>
+        </tr>
+
+        <tr>
+          <td align="left">11</td>
+          <td align="left" colspan="8">Wed, Dec 11 (Section C) 08:00 -10:00 am <br>
+            Fri Dec 13 (Section D) 08:00 -10:00 am </td>
+
+          <td align="center"><a href="final/final.html">
+            <i class="fas fa-edit fa-lg"></i> </a></td>
+        </tr>
+
+<!-- sample row
+        <tr>
+          <td align="left"></td>
+          <td align="left"></td>
+          <td align="left"></td>
+          <td align="center"><font color = "#cbcbcb">
+            <i class="fas fa-bullseye fa-lg"></i></font></td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-book-open fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-chalkboard-teacher fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-sticky-note fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-laptop fa-lg"></i></font> </td>
+            <td align="center"> <font color = "#cbcbcb">
+              <i class="fab fa-r-project fa-lg"></i></font> </td>
+          <td align="center"> <font color = "#cbcbcb">
+            <i class="fas fa-edit fa-lg"></i></font> </td>
+        </tr>
+      -->
+      </tbody>
+
+
+
+      </table>
+
+
+
+    </div> <!--main-text-->
+
+
+    <footer>
+
+    Copyright &copy; <a href="https://mdogucu.ics.uci.edu">Dr. Mine Dogucu</a>. All Rights Reserved.
+
+
+    </footer>
+
+  </body>
+</html>
